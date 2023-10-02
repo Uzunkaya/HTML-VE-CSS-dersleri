@@ -1,0 +1,47 @@
+.resimslider {
+    height: 600px;
+}
+
+body {
+    font-family: 'Lugrasimo', cursive;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans Syriac Eastern', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'VT323', monospace;
+    padding-top: 10px;
+}
+
+.hakkimizda {
+    background-color: #f2f2f2;
+}
+
+.ayrac {
+    border: none;  /*yanlardan görünmemesini sağlar*/
+    border-top: 3px solid #343a40;
+    max-width: 250px;
+    margin: 25px auto;
+
+}
+.ibeyaz{
+    color: #343a40;
+    position: relative;  /*AKIŞI BOZMADAN YUKARIDAN AŞAĞIDAN POZİSYONLANABİLME ÖZELLİĞİ*/
+    top: -55px;          /*YUKARIDAN MESAFE*/
+    font-size: 40px;
+    border: 10px solid white;
+    background-color: white;
+}
+.igri{
+    color: #343a40;
+    position: relative;  /*AKIŞI BOZMADAN YUKARIDAN AŞAĞIDAN POZİSYONLANABİLME ÖZELLİĞİ*/
+    top: -55px;          /*YUKARIDAN MESAFE*/
+    font-size: 40px;
+    border: 10px solid #f2f2f2;
+    background-color: #f2f2f2;
+}
+.galeri{
+    background-color: #f2f2f2; 
+}
+.figure:hover {   /*hover resmin üzerine gelindiğinde işe yarayan koddur opacity ise opakt olmasını sağlar*/
+    opacity: 0.8;
+}
+ 

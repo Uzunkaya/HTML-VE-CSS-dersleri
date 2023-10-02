@@ -1,0 +1,162 @@
+<!--
+ALT + SHIFT + F = kodları düzenlemek
+CTRL + ALT + aşağı veya yukarı ok = imleci yukarı veya aşağı kaydır
+ALT + YUKARIAŞAĞIYÖN = Satır kaydırma
+CTRL+D =Çoklu seçim ve değişim yapma
+CTRL+SHİFT+K = Satır silmek
+CTRL+ENTER = yeni Satır
+. class # id
+
+
+
+-->
+
+<!DOCTYPE html> <!--Bu kısım sayfanın kod temelini ooluşturur ***!enter****  -->
+<html> <!-- html ler arasına kodlar yazılır   -->
+
+<head> <!-- headler arasına ufak çaplı bilgiler vs yazılır   -->
+    <meta charset="UTF-8"> <!--burdaki charset türkçe karakterleri kullanmayı sağlar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  burdaki etikete responsive denir, yapılan sitenin telefon üzerinde nasıl olacaığını belirler.-->
+    <meta name="keywords" content="islamiyet">
+    <!--sayfanın hangi kelime karşısında çıkması gerektiği belirtir, anahtar keilme-->
+    <meta name="description" content="islamiyet Allah'ın emridir">
+    <!-- google da bulunan ön içerik kısmında ki açıklama yerini yazmayı sağlar-->
+    <title>iSLAMİYETİ ÖĞRENİYORUM </title> <!-- sayfanın başlığını belirler-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        ul {
+            background-color: aquamarine;
+            /*style etiketleri arasında ana şemanın boyutu ve arka plan rengi*/
+            list-style-type: none;
+
+
+            width: 100%;
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            /* kelimelerin özellikleri */
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 40%;
+
+        }
+
+        ul li:hover {
+            background-color: red;
+
+
+        }
+
+        ul li {
+            /*kelimelerin boyut kısımlarını yerlerini ve özelliklerini belirttik*/
+
+            width: 100px;
+            padding: 15px;
+            display: inline-block;
+            margin-left: -15px;
+
+
+
+
+        }
+
+        i {
+            padding-right: 10px;
+        }
+
+        #news-content {
+
+            display: none;
+            /*ana kelimelerin boyut görünüm işlemleri   */
+            z-index: 1;
+            position: absolute;
+            1 margin-top: 15px;
+            margin-left: -15px;
+            width: 90px;
+
+
+        }
+
+        #news-content li {
+            /* 2.tablonun yazılarının yer konumu */
+            margin-left: -40px;
+
+        }
+
+        /* .news-li:hover #news-content{
+            display: block;
+        } */
+        .news-li:hover #news-content {
+            display: block;
+        }
+
+        #news2-content {
+            z-index: 1;
+            /* 3.satırın yazılarının yer, konum, görünüm vs işlemleri */
+            display: none;
+            /*görünüm*/
+            position: absolute;
+            margin-left: 115px;
+            margin-top: -33px;
+            width: 90px;
+        }
+
+        #news-content :nth-child(2):hover #news2-content {
+            /* Burda news üzerine gelip news2 üzerine gelince details kısmını aktif etme */
+            display: block;
+        }
+    </style>
+</head>
+
+</body>
+<ul>
+    <li> <a href="#"><i class="fa-solid fa-house"></i></a>home</li> <!--a içerisinde yazmak kelimenin yönlednirme yapmasını
+    sağlar(link) --->
+    <li class="news-li">
+
+        <a href="#"><i class="fa-solid fa-house"></i></a>news
+        <div id="news-content">
+            <ul>
+                <li style="display: block;"><a href="#">news 1</a></li>
+                <li style="display: block;"><a href="#">news 2</a>
+
+                    <div id="news2-content">   <!-- id biçiminde yapmamız yukarıda tablonun özelliklerini belirtirken işimizi kolaylaştırır-->
+                        <ul>
+                            <li><a href="#">details 1</a></li>
+                            <li><a href="#">details 2</a></li>
+                            <li><a href="#">details 3</a></li>
+                            <li><a href="#">details 4</a></li>
+
+                        </ul>
+                    </div>
+
+                </li>
+                <li style="display: block;"><a href="#">news 3</a></li>
+                <li style="display: block;"> <a href="#">news 4</a></li>
+
+
+            </ul>
+        </div>
+    </li>
+    <li> <a href="#"><i class="fa-regular fa-address-card"></i></a>Contact</li>
+    <li> <a href="#"><i class="fa-regular fa-address-card"></i></a>about</li>
+</ul>
+
+</body>
+
+</html>
+
+
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>

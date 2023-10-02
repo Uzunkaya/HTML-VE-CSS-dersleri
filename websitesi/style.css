@@ -1,0 +1,136 @@
+.logo {
+    height: 50px;
+}
+
+.ayrac {
+    font-size: 20px;
+    margin: 0px 20px;
+    color: white;
+}
+
+
+.ust-kisim {
+    background-image: url(resimler/arkaplan.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    /*ÇERÇEVENİN TAM OLARAK OTURMASINI SAĞLAR*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.ust-kisim-sayfalar {
+    background-image: url(resimler/tarihplan2.jpg);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    /*ÇERÇEVENİN TAM OLARAK OTURMASINI SAĞLAR*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; Bu kod resmin div içerisinde ortalanmasını sağlar. */
+
+}
+.res{
+    height: calc(50vh-70px);
+    background-position-x: left;
+}
+
+
+.nav-bg {
+    background-color: rgba(122, 122, 122, 0.356);
+}
+
+.nav-item a {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-item a:hover {
+    color: #f4b70b;
+
+}
+
+.navbar-toggler-icon {
+
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media screen and(max-width: 992px) {
+    .ayrac {
+        display: none;
+    }
+}
+.nav-item:hover{
+    background-color: lightgrey;
+}
+.teklif{
+    height: 60px;
+}
+.tırnak{  /*Bu kısımda alt tarafta yazılan tırnak ve 1000 sayısının rengi değiştirildi size büyütüldü */
+    color: #f4b70b;
+    font-size: 28px;
+}
+.hizmetlerimiz{
+background-color:  #f4b70b;
+   
+}
+
+/*Çalışanlar kısmın*/
+
+.calisan_foto{
+height: 200px;
+width: 200px;
+background-color: #2C3E50;    
+border-radius: 100px;
+}
+
+.calisan_foto img{
+    height: 200px;
+    width: 200px;
+border-radius: 100px;
+
+}
+.calisan{
+    width: 200px;
+}   
+/*slogan-2 BAŞLANGIÇ*/
+.tirnak2{  /*Bu kısımda alt tarafta yazılan tırnak ve 1000 sayısının rengi değiştirildi size büyütüldü */
+    color: #f4b70b;
+    font-size: 28px;
+    font-weight: bold;
+}
+.söz{
+    font-size: 36px;
+    color: white;
+}
+.slogan{
+    background-image: url(resimler/KOYUUUo-1318101781-612x612.webp);
+    background-size: cover; /*resim boyutunu ayarlamada yardımcı olur
+    background-attachment: fixed; /*Resmin kaymasını sağladık. */
+    background-position: center center ; /*Orta noktaya odaklanmasını sağladık*/
+
+}
+/*slogan-2 BİTİŞ*/
+/*ÇALIŞMALARIMIZ BAŞLANGIÇ*/
+.haber img{
+    height:200px;
+    width: 200px;
+}
+.haber{
+    padding: 5px;
+  
+}
+.haber:hover{   /*Her bir başlığın üzerine gelindiğinde çerçeve çıkmasını sağlayan kod*/
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.seffaf {
+    background-color: rgba(255, 255, 255, 0.5); /* Saydamlık değeri: 0 ile 1 arasında olmalıdır */
+    border: 30px solid #333;
+    width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+}
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light"> <!--bar kısmının renklendirmesini yaptık-->
+        <a class="navbar-brand" href="boostrapNevbar.html">
+            <!--href içine boostrapnevbar sitesini koyduk bu sayede anasayfaya ve ikona tıklanıldığında oraya gidicek-->
+            <img src="Resimler/indir.png" width="50" height="50" alt="">
+            <!--sayfaya ikon atadık, boyutlarını belirledik-->
+           GALATASARAY </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="boostrapNevbar.html">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tarihimiz</a> <!--sayfanın butonlarını belirledik-->
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        <!--dropdown menüsü atadık bu sayede kurslarım başlığı adı altında seçenekler açıldı-->
+
+                        Branşlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Futbol</a>
+                        <a class="dropdown-item" href="#">Basketbol</a>
+                        <div class="dropdown-divider"></div> <!--satırı böler arasına çizgi atar.-->
+                        <a class="dropdown-item" href="#">Voleybol</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="boostrapKayıtForm.html">İletişim</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">kaynakça</a><!--disabled sayfa üzerinde tıklanmayı kapatır-->
+                </li>
+            </ul>
+
+        </div>
+    </nav>   <!--BURAYA KADAR OLAN KISIM NEVBARA AİTTİR İKİ SAYFAYI BİRLEŞTİRDİĞİMİZ İÇİN NEVBARI BURAYA AKTARDIM!!^'!^+'!^''-->
+    <div class="container">
+        <h1> KAYIT FORMU </h1>
+        <form>
+            <div class="row"> <!--6 lık parçalara bölüm isim ile şifre alanını yan yana getirdik-->
+                <div class="col">
+                    <!--Çoğu şeyi hazır çektik sadece isim kısımlarını değiştirdik ve divler arasında konteynırlar içine yerleştirdik.-->
+                    <div class="form-group">
+                        <label for="İsim-Soyİsim">İsim</label>
+                        <input type="text" class="form-control form-control-sm" id="isimInput"
+                            aria-describedby=isimHelp">
+                        <small id="isimHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Şifre">Şifre</label>
+                        <input type="password" class="form-control form-control-sm" id="şifreInput"
+                            aria-describedby=isimHelp">
+                        <small id="şifreHelp" class="form-text text-muted">Bu alan zorunludur.</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="email">E-mail adres</label>
+                        <input type="email" class="form-control" id="email">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Şehir">Şehir seçiniz</label>
+                        <select class="form-control" id="Şehir">
+                            <option>Şanlıurfa</option>
+                            <option>İstanbul</option>
+                            <option>Hatay</option>
+                            <option>Ankara</option>
+                            <option>Bursa</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="Dosyaseç">Dosya seçiniz</label>
+                        <input type="file" class="form-control-file" id="Dosyaseç">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="32" value="" id="Check1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            erkek
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="32" value="" id="Check1">
+                        <!--radio butonlar aynı anda ikisi birden işaretlenmesin diye isimlerini aynı yaptık butonların-->
+                        <label class="form-check-label" for="defaultCheck1">
+                            kız
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            kitap okumak
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            futbol oynamak
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Check1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            geometri çözmek
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="row">
+                <button type="submit" class="btn btn-success btn-block mt-3">Kaydet</button>
+                <button type="reset" class="btn btn-secondary btn-block">Temizle</button>
+
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
